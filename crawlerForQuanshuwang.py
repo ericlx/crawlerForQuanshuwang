@@ -3,6 +3,7 @@
 import urllib, urllib2
 import re
 
+
 def getNovelListUrl():
     html = urllib.urlopen('http://www.quanshuwang.com/list/1_1.html').read().decode('gbk').encode('utf-8')
     reg = r'<a target="_blank" title=".*?" href="(.*?)" class="clearfix stitle">(.*?)</a>作者：<a href=".*?">(.*?)</a>'
